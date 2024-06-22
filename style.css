@@ -31,7 +31,7 @@ header li a {
 
 /* container */
 .container {
-    margin: 0 100px;
+    margin: 0 5.6vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,21 +94,18 @@ header li a {
 }
 
 /* grid */
-.available-devices {
-    padding: 5.6vw;
-}
-
-.available-devices__list {
+.cardapio__list {
+    margin: 5.6vw;
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.available-devices__list__item {
+.cardapio__list__item {
     list-style: none;
 }
 
-.available-devices__list__item img {
+.cardapio__list__item img {
     max-width: 100%;
 }
 
@@ -129,4 +126,30 @@ header li a {
     display: block;
     padding: 16px;
     width: 100%;
+}
+
+/* space */
+.space {
+    display: block;
+    /* gap: 5px;
+    grid-template-areas: 
+        'img1 img1 img1'
+        'img2 img3 img4'
+        'img5 img5 img5'; */
+}
+
+.space__list {
+    list-style: none;
+    margin: 5.6vw;
+}
+
+.space__list__item img {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
 }
