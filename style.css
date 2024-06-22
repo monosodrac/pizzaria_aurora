@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: judson;
+}
+
+/* header */
+header {
+    background-color: #8a1f1f;
+}
+
+header img {
+    height: 90px;
+    width: 120px;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: #D99455;
+    margin-right: 48px;
+}
+
+/* container */
+.container {
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Hero */
+.image-text-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-image: url(./imgs/bg-hero.png);
+    background-size: cover;
+    height: 100vh;
+    padding: 0 2vw;
+}
+
+.image-text-section__text_container h2 {
+    margin-bottom: 24px;
+}
+
+.image-text-section__text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.title {
+    display: flex;
+    font-weight: bold;
+    font-size: 48px;
+    justify-content: center;
+    color: #A70D0D;
+    margin-bottom: 32px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+    margin-bottom: 58px;
+    color: #fff;
+}
+
+.btn-hero {
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    padding: 24px 28px;
+    background-color: #871414;
+    color: #C1834A;
+    font-family: judson;
+    font-size: 32px;
+    max-width: 332px;
+    border: none;
+    cursor: pointer;
+}
+
+/* grid */
+.available-devices {
+    padding: 5.6vw;
+}
+
+.available-devices__list {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.available-devices__list__item {
+    list-style: none;
+}
+
+.available-devices__list__item img {
+    max-width: 100%;
+}
+
+
+/* space header */
+.hspace {
+    background-color: #8A1F1F;
+    color: #D99455;
+    text-align: center;
+    padding: 24px;
+}
+
+.hspace h2 {
+    font-size: 42px;
+}
+
+.hspace {
+    display: block;
+    padding: 16px;
+    width: 100%;
+}
