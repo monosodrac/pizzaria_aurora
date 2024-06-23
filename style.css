@@ -57,6 +57,7 @@ header li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-right: 40px;
 }
 
@@ -79,18 +80,8 @@ header li a {
     color: #fff;
 }
 
-.btn-hero {
-    display: flex;
-    justify-content: center;
-    margin-left: 25%;
-    padding: 24px 28px;
-    background-color: #871414;
-    color: #C1834A;
-    font-family: judson;
-    font-size: 32px;
-    max-width: 332px;
-    border: none;
-    cursor: pointer;
+.btn-hero img {
+    height: 6rem;
 }
 
 /* grid */
@@ -110,40 +101,32 @@ header li a {
 }
 
 
-/* space header */
-.hspace {
+/* sections header */
+.hsection {
+    display: block;
+    padding: 16px;
+    width: 100%;
     background-color: #8A1F1F;
     color: #D99455;
     text-align: center;
     padding: 24px;
 }
 
-.hspace h2 {
+.hsection h2 {
     font-size: 42px;
 }
 
-.hspace {
+/* espaço */
+.espaco {
     display: block;
-    padding: 16px;
-    width: 100%;
 }
 
-/* space */
-.space {
-    display: block;
-    /* gap: 5px;
-    grid-template-areas: 
-        'img1 img1 img1'
-        'img2 img3 img4'
-        'img5 img5 img5'; */
-}
-
-.space__list {
+.espaco__list {
     list-style: none;
     margin: 5.6vw;
 }
 
-.space__list__item img {
+.espaco__list__item img {
     width: 100%;
     margin: 2rem 0;
 }
@@ -152,4 +135,61 @@ header li a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+}
+
+/* delivery */
+.delivery {
+    display: flex;
+    margin: 5.6vw;
+}
+
+.delivery img {
+    height: 19rem;
+}
+
+.delivery__text {
+    margin-left: 3.5rem;
+    font-size: 1.5rem;
+    font-family: inknut antiqua;
+}
+
+.delivery__text h4 {
+    font-size: 3rem;
+    color: #961414;
+}
+
+.contato {
+    background-color: #8A1F1F;
+}
+
+.contato__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin: 5.6vw;
+    font-size: 2rem;
+    color: #fff;
+    align-items: center;
+}
+
+.contato__list img {
+    height: 17.7rem;
+}
+
+.contato__list .maps iframe {
+    height: 17.7rem;
+    width: 17.7rem;
+    position: relative;
+}
+
+.rodape {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-top: 1px solid #fff;
+}
+
+.rodape h2 {
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: 1rem;
 }
