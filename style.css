@@ -11,6 +11,10 @@ body {
 /* header */
 header {
     background-color: #8a1f1f;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 998;
 }
 
 header img {
@@ -26,7 +30,7 @@ header li {
 header li a {
     text-decoration: none;
     color: #D99455;
-    margin-right: 48px;
+    margin-left: 48px;
 }
 
 /* container */
@@ -37,6 +41,22 @@ header li a {
     align-items: center;
 }
 
+/* sections header */
+.hsection {
+    display: block;
+    padding: 16px;
+    width: 100%;
+    background-color: #8A1F1F;
+    color: #D99455;
+    text-align: center;
+    padding: 24px;
+}
+
+.hsection h2 {
+    font-size: 42px;
+    position: sticky;
+    z-index: 999;
+}
 
 /* Hero */
 .image-text-section {
@@ -85,36 +105,21 @@ header li a {
 }
 
 /* grid */
-.cardapio__list {
+.destaques__list {
     margin: 5.6vw;
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.cardapio__list__item {
+.destaques__list__item {
     list-style: none;
 }
 
-.cardapio__list__item img {
+.destaques__list__item img {
     max-width: 100%;
 }
 
-
-/* sections header */
-.hsection {
-    display: block;
-    padding: 16px;
-    width: 100%;
-    background-color: #8A1F1F;
-    color: #D99455;
-    text-align: center;
-    padding: 24px;
-}
-
-.hsection h2 {
-    font-size: 42px;
-}
 
 /* espaço */
 .espaco {
@@ -176,6 +181,9 @@ header li a {
     height: 17.7rem;
 }
 
+.contato__list .maps iframe {
+    margin-bottom: 5.6vw;
+}
 .contato__list .maps iframe {
     height: 17.7rem;
     width: 17.7rem;
